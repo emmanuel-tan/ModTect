@@ -37,7 +37,4 @@ COPY ModTect_1_7_5_1.py ${APP_HOME}/
 COPY lib/               ${APP_HOME}/lib/
 COPY sample/            ${APP_HOME}/sample/
 
-# Quick runtime check
-ENTRYPOINT [ "python ModTect_1_7_5_1.py" ]
-
 CMD ["bash", "-lc", "python --version && pip --version && samtools --version"]
